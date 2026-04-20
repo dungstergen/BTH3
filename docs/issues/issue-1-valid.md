@@ -1,19 +1,22 @@
-# Issue 1 - Dữ liệu hợp lệ
+# Issue 1 - Du lieu hop le
 
-Thiết kế và viết các ca kiểm thử hộp đen cho các trường hợp dữ liệu hợp lệ.
+Muc tieu:
 
-Phạm vi:
+- Thiet ke va viet cac ca kiem thu hop den cho du lieu hop le cua 8 bai toan.
 
-- Chu vi hình chữ nhật
-- Diện tích hình chữ nhật
-- Giải phương trình bậc 2
-- Số ngày của một tháng
-- Kiểm tra số nguyên tố
-- Tổng 1 - 2 + 3 - 4 + ... + n
-- UCLN của a và b
-- Tổng 1! + 2! + 3! + ... + n!
+Pham vi test case:
 
-Kết quả mong đợi:
+- Chu vi hinh chu nhat: `TC-RECT-01`
+- Dien tich hinh chu nhat: `TC-AREA-01`
+- Giai PT bac 2: `TC-QUAD-01`, `TC-QUAD-02`, `TC-QUAD-04`
+- So ngay cua thang: `TC-DAY-01`, `TC-DAY-02`, `TC-DAY-03`
+- Kiem tra so nguyen to: `TC-PRIME-01`, `TC-PRIME-02`
+- Tong luan phien: `TC-ALT-01`
+- UCLN: `TC-GCD-01`
+- Tong giai thua: `TC-FSUM-01`
 
-- Bộ test bao phủ các lớp tương đương hợp lệ và các giá trị biên quan trọng.
-- Các test đều pass trên code hiện tại.
+Tieu chi hoan thanh:
+
+- [x] Moi bai toan co it nhat 1 test case hop le
+- [x] Cac test case hop le deu pass
+- [x] Danh sach test case da cap nhat tai `docs/test-cases.md`

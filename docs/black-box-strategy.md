@@ -1,22 +1,32 @@
-# Mô tả áp dụng kiểm thử hộp đen
+# Mo ta ap dung kiem thu hop den
 
-## Nguyên tắc chung
+## Nguyen tac chung
 
-Mỗi bài toán được xem như một hộp đen: chỉ quan tâm đến đầu vào, đầu ra mong đợi và cách chương trình phản hồi với dữ liệu không hợp lệ.
+Moi bai toan duoc kiem thu theo huong hop den: chi xet dau vao, dau ra mong doi va hanh vi xu ly loi.
 
-Các kỹ thuật được dùng:
+Ky thuat da ap dung:
 
-- Phân lớp tương đương: chia dữ liệu thành nhóm hợp lệ và không hợp lệ
-- Phân tích giá trị biên: kiểm tra giá trị nhỏ nhất, lớn nhất, và sát biên
-- Dữ liệu hợp lệ và không hợp lệ: bảo đảm chương trình xử lý đúng cả hai phía
+- Phan lop tuong duong
+- Phan tich gia tri bien
+- Du lieu hop le/khong hop le
+- Kiem tra ngoai le (TypeError, RangeError)
 
-## Từng bài
+## Dinh nghia dau vao va dau ra mong doi
 
-1. Chu vi hình chữ nhật: kiểm tra số dương, số 0, và số âm để xác nhận quy tắc diện tích/chu vi không chấp nhận cạnh âm.
-2. Diện tích hình chữ nhật: tương tự bài chu vi, nhưng đặc biệt kiểm tra kết quả bằng 0 khi một cạnh bằng 0.
-3. Phương trình bậc 2: bao phủ 3 lớp chính gồm 2 nghiệm phân biệt, nghiệm kép, phương trình bậc nhất khi a=0, và trường hợp vô nghĩa khi a=b=0.
-4. Số ngày của tháng: kiểm tra tháng hợp lệ, tháng 2 năm nhuận, tháng 2 không nhuận, và tháng ngoài khoảng 1-12.
-5. Số nguyên tố: kiểm tra số nguyên tố, số không nguyên tố, và biên n<2.
-6. Tổng luân phiên: kiểm tra n chẵn/lẻ, n=0, và n âm.
-7. UCLN: kiểm tra cặp số dương, cặp có số 0, và trường hợp 0 với 0.
-8. Tổng giai thừa: kiểm tra n nhỏ, n=0, và n âm.
+| Bai toan                | Dau vao                                     | Dau ra mong doi                                                     | Xu ly du lieu sai                                           |
+| ----------------------- | ------------------------------------------- | ------------------------------------------------------------------- | ----------------------------------------------------------- |
+| Chu vi hinh chu nhat    | `length`, `width` (number, >= 0)            | So chu vi `2 * (length + width)`                                    | Am -> `RangeError`, sai kieu -> `TypeError`                 |
+| Dien tich hinh chu nhat | `length`, `width` (number, >= 0)            | So dien tich `length * width`                                       | Am -> `RangeError`, sai kieu -> `TypeError`                 |
+| Giai PT bac 2           | `a`, `b`, `c` (number)                      | Ket qua theo nhom nghiem: `distinct`, `double`, `complex`, `linear` | `a=0,b=0` -> `RangeError`, sai kieu -> `TypeError`          |
+| So ngay cua thang       | `month` (int 1..12), `year` (int, tuy chon) | So ngay cua thang                                                   | Thang ngoai [1,12] -> `RangeError`, sai kieu -> `TypeError` |
+| Kiem tra so nguyen to   | `n` (int)                                   | `true/false`                                                        | Sai kieu (khong phai int) -> `TypeError`                    |
+| Tong luan phien         | `n` (int, >= 0)                             | `1 - 2 + ... +/- n`                                                 | `n<0` -> `RangeError`, sai kieu -> `TypeError`              |
+| UCLN                    | `a`, `b` (int)                              | UCLN khong am                                                       | `a=0,b=0` -> `RangeError`, sai kieu -> `TypeError`          |
+| Tong giai thua          | `n` (int, >= 0)                             | `1! + 2! + ... + n!`                                                | `n<0` -> `RangeError`, sai kieu -> `TypeError`              |
+
+## Tach issue theo yeu cau de bai
+
+- Issue 1: Tap trung cac test case du lieu hop le.
+- Issue 2: Tap trung cac test case du lieu khong hop le, bien va ngoai le.
+
+Toan bo test case chi tiet nam trong file `docs/test-cases.md`, va ket qua chay test nam trong `docs/test-results.md`.

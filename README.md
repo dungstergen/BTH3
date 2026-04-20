@@ -17,3 +17,13 @@ Repository này triển khai 8 bài toán trong đề bài và bộ kiểm thử
 ```bash
 npm test
 ```
+
+## Doi chieu yeu cau de bai
+
+- Ma nguon 8 bai toan: `src/bth3/index.js`
+- Danh sach test case (phan lop tuong duong, gia tri bien, du lieu hop le/khong hop le): `docs/test-cases.md`
+- Ket qua chay kiem thu: `docs/test-results.md`
+- Mo ta cach ap dung kiem thu hop den cho tung bai: `docs/black-box-strategy.md`
+- Noi dung issue theo yeu cau:
+    - Issue 1 (du lieu hop le): `docs/issues/issue-1-valid.md`
+    - Issue 2 (du lieu khong hop le, bien, ngoai le): `docs/issues/issue-2-invalid.md`
