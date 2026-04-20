@@ -1,9 +1,0 @@
-{
-  "name": "bth3-black-box-testing",
-  "version": "0.1.0",
-  "private": true,
-  "description": "Bai thuc hanh 03 - kiem thu hop den",
-  "scripts": {
-    "test": "node --test"
-  }
-}
