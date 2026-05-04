@@ -34,6 +34,8 @@ JaCoCo sẽ sinh báo cáo coverage trong `target/site/jacoco/index.html` sau kh
 - Ma nguon 8 bai toan: `src/main/java/bth3/Bth3Calculator.java`
 - Danh sach test case (phan lop tuong duong, gia tri bien, du lieu hop le/khong hop le): `docs/test-cases.md`
 - Ket qua chay kiem thu: `docs/test-results.md`
+  ![alt text](<Screenshot 2026-05-04 082120.png>)
+  ![alt text](<Screenshot 2026-05-04 082128.png>)
 - Mo ta cach ap dung kiem thu hop den cho tung bai: `docs/black-box-strategy.md`
 - Noi dung issue theo yeu cau:
     - Issue 1 (du lieu hop le): `docs/issues/issue-1-valid.md`
