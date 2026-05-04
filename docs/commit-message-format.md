@@ -28,7 +28,7 @@ Files:
 - <file 2>
 
 Kiem tra:
-- npm test
+- mvn test
 ```
 
 ## Danh sach 16 tieu de commit de dung
