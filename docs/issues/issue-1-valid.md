@@ -9,8 +9,8 @@ Pham vi test case:
 - Chu vi hinh chu nhat: `TC-RECT-01`
 - Dien tich hinh chu nhat: `TC-AREA-01`
 - Giai PT bac 2: `TC-QUAD-01`, `TC-QUAD-02`, `TC-QUAD-04`
-- So ngay cua thang: `TC-DAY-01`, `TC-DAY-02`, `TC-DAY-03`
-- Kiem tra so nguyen to: `TC-PRIME-01`, `TC-PRIME-02`
+- So ngay cua thang: `TC-DAY-01`, `TC-DAY-02`, `TC-DAY-03`, `TC-DAY-07`, `TC-DAY-08`, `TC-DAY-10`, `TC-DAY-11`
+- Kiem tra so nguyen to: `TC-PRIME-01`, `TC-PRIME-02`, `TC-PRIME-06`
 - Tong luan phien: `TC-ALT-01`
 - UCLN: `TC-GCD-01`
 - Tong giai thua: `TC-FSUM-01`
